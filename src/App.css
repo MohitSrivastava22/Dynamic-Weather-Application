@@ -1,0 +1,134 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.leftBox {
+  height: 50%;
+  margin-top: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 29%;
+  /* transform: translate(235px,40px); */
+  border-radius: 10px;
+}
+
+
+.wind {
+  width: 149px;
+  height: 65px;
+
+  border-radius: 5px;
+}
+
+.humidity {
+  width: 149px;
+  height: 65px;
+  border-radius: 5px;
+
+}
+
+.DateAndTime{
+  width: 149px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  /* position: relative; */
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container while preserving aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For small screens (mobile devices) */
+@media only screen and (max-width: 768px) {
+  .leftBox {
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  .wind,
+  .humidity {
+    width: 100px;
+    height: 50px;
+  }
+
+  .DateAndTime {
+    width: 100px;
+  }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .leftBox {
+    width: 60%;
+    margin-top: 60px;
+  }
+
+  .wind,
+  .humidity {
+    width: 120px;
+    height: 60px;
+  }
+
+  .DateAndTime {
+    width: 120px;
+  }
+}
+
+/* For large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  .leftBox {
+    width: 40%;
+    margin-top: 80px;
+  }
+
+  .wind,
+  .humidity {
+    width: 149px;
+    height: 65px;
+  }
+
+  .DateAndTime {
+    width: 149px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .text-3xl {
+    font-size: 24px;
+  }
+}
